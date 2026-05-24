@@ -1,10 +1,10 @@
 # fired.vc — site
 
-Single-page site for **Fired.VC**, a Toronto-based agentic venture studio (Sunil Sharma + Gilberto Gandra).
+Single-page site for **fired.vc**, a Toronto-based agentic venture studio (Sunil Sharma + Gilberto Gandra).
 
 ## Sources synthesized into this build
 
-1. **Fired.VC Operating Plan** — canonical strategy, dividend model, 12-week sprint, founder archetype, verticals, sponsor tiers, manifesto.
+1. **fired.vc Operating Plan** — canonical strategy, dividend model, 12-week sprint, founder archetype, verticals, sponsor tiers, manifesto.
 2. **NFX Network Effects Bible** — Growth Stack (Embedded NFX → Viral → Reinforcement Defensibility → Screenless Distribution), Three-Person Unicorn framing, expertise NFX (#14), 70% statistic informing scoring weights.
 3. **FI Global Leaders Call (Mar 2026)** — agentic shift, Mac Mini = team, 80/20 unicorn thesis, zero-to-one positioning.
 4. **Anthropic "Founder's Playbook" (2026)** — Idea/MVP/Launch/Scale stages used as the operating manual section, Claude tool stack callouts, security review discipline, CLAUDE.md persistent context.
@@ -32,7 +32,7 @@ Single-page site for **Fired.VC**, a Toronto-based agentic venture studio (Sunil
 
 ## Strategic notes (internal)
 
-- Techstars Toronto deck used **for credibility patterns**, not as the operating strategy. Sunil's Techstars + FI tenure is presented as the personal track record behind Fired.VC, but the structure (dividends, agentic-first, 12-week sprint) belongs to the Fired plan, not to Techstars.
+- Techstars Toronto deck used **for credibility patterns**, not as the operating strategy. Sunil's Techstars + FI tenure is presented as the personal track record behind fired.vc, but the structure (dividends, agentic-first, 12-week sprint) belongs to the Fired plan, not to Techstars.
 - Anthropic Playbook is **branded as the operating manual** for the sprint. The four stages give Fired's sprint a credible, externally-validated framework. We are explicit that we are not affiliated with Anthropic — we operate on their tooling.
 - Proof Points companies are **reference cases**, not portfolio companies. Sourced from Anthropic's Playbook. Disclaimer in the section makes this explicit.
 
