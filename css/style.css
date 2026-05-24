@@ -71,13 +71,8 @@ em{font-style:italic;color:var(--ink-2)}
   display:flex;align-items:center;gap:24px;
 }
 .brand{display:flex;align-items:center;gap:10px}
-.brand__mark{display:inline-flex}
-.brand__word{
-  font-family:"Space Grotesk",sans-serif;font-weight:700;
-  letter-spacing:.04em;font-size:18px;color:var(--ink);
-}
-.brand__dot{color:var(--fire-1)}
-.brand__tld{color:var(--fire-2)}
+.brand__logo{display:block;height:42px;width:auto}
+@media (max-width:560px){.brand__logo{height:34px}}
 .nav__links{display:flex;gap:22px;margin-left:auto}
 .nav__links a{
   font-size:14px;color:var(--ink-2);font-weight:500;
@@ -545,7 +540,8 @@ em{font-style:italic;color:var(--ink-2)}
 /* === FOOTER === */
 .foot{border-top:1px solid var(--line);padding:50px 0 40px;background:#08080a}
 .foot__inner{display:grid;grid-template-columns:1fr auto 1fr;gap:30px;align-items:center}
-.foot__brand p{margin:6px 0 0;color:var(--ink-3);font-size:12.5px}
+.foot__brand p{margin:10px 0 0;color:var(--ink-3);font-size:12.5px}
+.foot__logo{display:block;height:48px;width:auto;margin-bottom:4px}
 .foot__nav{display:flex;gap:18px;flex-wrap:wrap;justify-content:center}
 .foot__nav a{color:var(--ink-3);font-size:13.5px;transition:color .15s}
 .foot__nav a:hover{color:var(--fire-2)}

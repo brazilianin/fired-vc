@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 200" width="620" height="200" aria-label="Fired.VC">
+  <defs>
+    <!-- Flat two-tone fire with hard diagonal fold (FI green-on-green parallel) -->
+    <linearGradient id="flameA" x1="0.15" y1="1" x2="0.95" y2="0">
+      <stop offset="0%"   stop-color="#C9461F"/>
+      <stop offset="50%"  stop-color="#C9461F"/>
+      <stop offset="50.01%" stop-color="#F0822B"/>
+      <stop offset="100%" stop-color="#F0822B"/>
+    </linearGradient>
+  </defs>
+
+  <!-- MARK: shrunk ~12% from v4; baseline tuned to wordmark cap-height -->
+  <g transform="translate(28,28) scale(0.85)">
+    <path d="
+      M 68 0
+      C 56 8, 48 18, 50 30
+      C 51 38, 56 42, 60 46
+      C 46 64, 36 84, 32 106
+      C 28 138, 50 168, 84 170
+      C 122 172, 156 152, 158 116
+      C 160 86, 146 60, 126 40
+      C 108 22, 88 8, 68 0 Z"
+      fill="url(#flameA)"/>
+
+    <!-- Elegant serif 'f' — lifted so descender stays inside flame; sized to fit -->
+    <text x="86" y="128"
+          text-anchor="middle"
+          font-family="'EB Garamond','Cormorant Garamond','Garamond','Times New Roman',serif"
+          font-style="italic"
+          font-weight="500"
+          font-size="150"
+          fill="#7A1F0E">f</text>
+  </g>
+
+  <!-- WORDMARK: light-weight serif lockup, muted slate gray -->
+  <g font-family="'Cormorant Garamond','EB Garamond','Trajan Pro','Garamond',Georgia,serif"
+     font-weight="300"
+     fill="#4A4441">
+    <text x="200" y="92" font-size="62" letter-spacing="4">FIRED<tspan>.</tspan><tspan>VC</tspan></text>
+    <text x="200" y="128" font-size="22" letter-spacing="14" fill="#8C8580">VENTURES</text>
+  </g>
+</svg>
