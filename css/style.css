@@ -271,10 +271,20 @@ em{font-style:italic;color:var(--ink-2)}
   padding:24px;transition:border-color .2s, transform .2s;
 }
 .proof__c:hover{border-color:rgba(255,138,61,.4);transform:translateY(-2px)}
+.proof__c{
+  text-decoration:none;display:block;
+}
 .proof__c h4{
   font-family:"Space Grotesk",sans-serif;font-weight:600;font-size:18px;
   margin:0 0 4px;color:var(--ink);
 }
+.proof__logo{
+  display:block;height:38px;width:auto;max-width:80%;
+  margin:0 0 18px;color:#b5b0a6;
+  opacity:.85;
+  transition:opacity .2s, color .2s;
+}
+.proof__c:hover .proof__logo{opacity:1;color:var(--fire-2)}
 .proof__line{
   margin:0 0 12px;font-family:"JetBrains Mono",monospace;font-size:11px;
   letter-spacing:.16em;text-transform:uppercase;color:var(--fire-2);
@@ -304,6 +314,19 @@ em{font-style:italic;color:var(--ink-2)}
 .gp__bullets li::before{
   content:"";position:absolute;left:0;top:14px;width:8px;height:1px;background:var(--fire-2);
 }
+.gp__link{
+  display:inline-block;margin-left:10px;font-family:"JetBrains Mono",monospace;
+  font-size:11px;letter-spacing:.1em;color:var(--fire-2);
+  text-decoration:none;border:1px solid rgba(255,138,61,.3);
+  padding:3px 8px;border-radius:6px;vertical-align:middle;
+  transition:border-color .15s,color .15s;
+}
+.gp__link:hover{color:var(--ink);border-color:var(--fire-2)}
+.gp__note{
+  margin:14px 0 0;font-family:"JetBrains Mono",monospace;
+  font-size:10.5px;letter-spacing:.1em;color:var(--ink-3);text-transform:uppercase;
+}
+.gp__note a{color:var(--fire-2)}
 /* === COMPANIONS / FIRST-MOVER === */
 .section--companions{position:relative}
 .section--companions::before{
@@ -431,11 +454,19 @@ em{font-style:italic;color:var(--ink-2)}
   transition:border-color .2s, transform .2s;
 }
 .to-co:hover{border-color:rgba(255,138,61,.4);transform:translateY(-2px)}
+.to-co{text-decoration:none}
 .to-co strong{
   font-family:"Space Grotesk",sans-serif;font-weight:700;font-size:15.5px;color:var(--ink);
   letter-spacing:-.005em;
 }
 .to-co span{font-size:12px;color:var(--ink-3);line-height:1.45}
+.to-co__logo{
+  display:block;height:26px;width:auto;max-width:85%;
+  margin:0 0 12px;color:#b5b0a6;
+  opacity:.80;
+  transition:opacity .2s, color .2s;
+}
+.to-co:hover .to-co__logo{opacity:1;color:var(--fire-2)}
 
 /* Special CTA card in the to-grid */
 .to-card--cta{
@@ -715,6 +746,42 @@ em{font-style:italic;color:var(--ink-2)}
 .form__ok{
   color:var(--green);font-family:"JetBrains Mono",monospace;font-size:13px;margin:8px 0 0;
   letter-spacing:.04em;
+}
+
+/* === LP BRIEF FORM === */
+.section--lpform{
+  background:linear-gradient(180deg,var(--bg-2) 0%,var(--bg) 100%);
+  border-top:1px solid var(--line);
+}
+.lp-form{max-width:760px;margin:0 auto}
+.lp-form__form{margin-top:24px}
+.form__accredited, .form__investing{
+  border:1px solid var(--line);border-radius:10px;padding:18px 20px;background:var(--bg-3);
+  margin:0;
+}
+.form__accredited legend, .form__investing legend{
+  padding:0 8px;font-family:"JetBrains Mono",monospace;font-size:11px;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--fire-2);
+}
+.form__hint{
+  margin:2px 0 14px;font-size:12.5px;color:var(--ink-3);line-height:1.5;
+  letter-spacing:normal;text-transform:none;font-family:inherit;
+}
+.form__radios{display:flex;flex-direction:column;gap:10px}
+.form__radios--inline{flex-direction:row;flex-wrap:wrap;gap:18px}
+.form__radios label{
+  display:flex;align-items:center;gap:10px;color:var(--ink-2);font-size:15px;
+  letter-spacing:normal;text-transform:none;font-family:inherit;cursor:pointer;
+}
+.form__radios input[type="radio"]{
+  appearance:none;-webkit-appearance:none;
+  width:18px;height:18px;border:1.5px solid var(--line-2);border-radius:50%;
+  cursor:pointer;display:inline-flex;align-items:center;justify-content:center;
+  background:transparent;flex-shrink:0;transition:border-color .15s;
+}
+.form__radios input[type="radio"]:checked{border-color:var(--fire-2)}
+.form__radios input[type="radio"]:checked::after{
+  content:"";width:9px;height:9px;border-radius:50%;background:var(--fire-2);
 }
 
 /* === FOOTER === */
