@@ -397,6 +397,53 @@ em{font-style:italic;color:var(--ink-2)}
 }
 .to-honest p:not(.eyebrow){margin:0;color:var(--ink-2);font-size:15.5px;line-height:1.65}
 
+/* Vector sub-line */
+.to-vector__sub{
+  margin-top:14px !important;
+  font-family:"JetBrains Mono",monospace;font-size:11.5px;
+  letter-spacing:.16em;text-transform:uppercase;color:var(--fire-2) !important;
+}
+
+/* Research strengths sub-grid inside a to-block */
+.to-block__sub{
+  margin:6px 0 16px !important;color:var(--ink-3) !important;font-size:14.5px !important;
+}
+.to-research{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:14px;
+}
+.to-research article{
+  background:var(--bg-2);border:1px solid var(--line);border-radius:10px;
+  padding:18px 20px;
+}
+.to-research h4{
+  margin:0 0 8px;font-family:"Space Grotesk",sans-serif;font-weight:600;
+  font-size:15px;color:var(--ink);
+}
+.to-research p{margin:0;color:var(--ink-2);font-size:13.5px;line-height:1.55}
+
+/* Toronto AI company stack */
+.to-stack{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:14px;
+}
+.to-co{
+  background:var(--bg-3);border:1px solid var(--line);border-radius:10px;
+  padding:14px 16px;display:flex;flex-direction:column;gap:5px;
+  transition:border-color .2s, transform .2s;
+}
+.to-co:hover{border-color:rgba(255,138,61,.4);transform:translateY(-2px)}
+.to-co strong{
+  font-family:"Space Grotesk",sans-serif;font-weight:700;font-size:15.5px;color:var(--ink);
+  letter-spacing:-.005em;
+}
+.to-co span{font-size:12px;color:var(--ink-3);line-height:1.45}
+
+/* Special CTA card in the to-grid */
+.to-card--cta{
+  background:linear-gradient(180deg,rgba(255,138,61,.10),rgba(255,138,61,.02));
+  border-color:rgba(255,138,61,.30);
+}
+.to-card--cta h4{color:var(--fire-2)}
+
 /* === MANIFESTO === */
 .manifesto{padding:100px 0;border-top:1px solid var(--line);background:var(--bg-2);position:relative;overflow:hidden}
 .manifesto::before{
@@ -707,6 +754,8 @@ em{font-style:italic;color:var(--ink-2)}
   .stages{grid-template-columns:1fr}
   .proof{grid-template-columns:1fr 1fr}
   .gps{grid-template-columns:1fr}
+  .to-research{grid-template-columns:1fr}
+  .to-stack{grid-template-columns:1fr 1fr}
   .credstrip__inner{flex-direction:column;align-items:flex-start;gap:18px}
   .credstrip__stats{gap:20px}
   .nfx-stack{grid-template-columns:1fr}
@@ -731,6 +780,8 @@ em{font-style:italic;color:var(--ink-2)}
   .credstrip__stats li{min-width:120px}
   .to-grid{grid-template-columns:1fr}
   .to-vector__stats{grid-template-columns:1fr 1fr;gap:12px 16px}
+  .to-research{grid-template-columns:1fr}
+  .to-stack{grid-template-columns:1fr 1fr}
   .wrap{padding:0 18px}
   .nav__inner{padding:12px 18px}
   .hero__inner{padding:30px 18px 16px}
